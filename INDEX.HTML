@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphic Dark Calculation Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calc-housing-frame">
+        <div class="screen-output-viewport">
+            <div id="formula-history-tracker"></div>
+            <div id="primary-numerical-view">0</div>
+        </div>
+
+        <div class="keypad-grid-matrix">
+            <button class="calc-key-node functional-utility-key" data-cmd="clear">C</button>
+            <button class="calc-key-node functional-utility-key" data-cmd="delete">⌫</button>
+            <button class="calc-key-node operator-math-key" data-token="/">÷</button>
+            <button class="calc-key-node operator-math-key" data-token="*">×</button>
+
+            <button class="calc-key-node" data-token="7">7</button>
+            <button class="calc-key-node" data-token="8">8</button>
+            <button class="calc-key-node" data-token="9">9</button>
+            <button class="calc-key-node" data-token="-">−</button>
+
+            <button class="calc-key-node" data-token="4">4</button>
+            <button class="calc-key-node" data-token="5">5</button>
+            <button class="calc-key-node" data-token="6">6</button>
+            <button class="calc-key-node" data-token="+">+</button>
+
+            <button class="calc-key-node" data-token="1">1</button>
+            <button class="calc-key-node" data-token="2">2</button>
+            <button class="calc-key-node" data-token="3">3</button>
+            <button class="calc-key-node" data-token=".">.</button>
+
+            <button class="calc-key-node" data-token="0">0</button>
+            <button class="calc-key-node execution-eval-key" id="calculate-total-trigger">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
